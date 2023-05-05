@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const BASE_URL = "http://localhost:4004";
+const BASE_URL = "https://us-central1-music-stream-4fde8.cloudfunctions.net/app";
 
 
 

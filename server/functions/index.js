@@ -22,7 +22,7 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(4004,()=>console.log(`listening on 4004`))
+// app.listen(4004,()=>console.log(`listening on 4004`))
 
 // // Create and deploy your first functions
 // // https://firebase.google.com/docs/functions/get-started
@@ -31,3 +31,5 @@ app.listen(4004,()=>console.log(`listening on 4004`))
 //   functions.logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
+
+exports.app = functions.https.onRequest(app);

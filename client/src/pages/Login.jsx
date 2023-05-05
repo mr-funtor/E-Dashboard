@@ -30,8 +30,8 @@ const styles ={
 }
 
 const loginSchema=yup.object({
-    userName:yup.string().required('This field is required'),
-    password:yup.string().required('This field is required'),
+    userName:yup.string().required('This field is required. Hint: It is "admin"'),
+    password:yup.string().required('This field is required. Hint: It is "12345"'),
 })
 
 const Login=()=>{
